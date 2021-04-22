@@ -11,7 +11,9 @@ import { ArrowLeft, ArrowRight, ArrowUp } from '../components/icons'
 
 export default ({ data, pageContext }) => {
   const { previous, next } = pageContext
-  const rootPath = `${__PATH_PREFIX__}/`
+  // const rootPath = `${__PATH_PREFIX__}/`
+  // const rootPath = `/shakysnails/`
+  const rootPath = `${process.env.rootPath}`
   const Grow = () => <div className="flex-grow" />
   const post = data.mdx
   return (

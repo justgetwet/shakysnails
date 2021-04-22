@@ -6,7 +6,7 @@ import { Github, Twitter } from './icons'
 export default function Header() {
   const data = useStaticQuery(graphql`
     query {
-      avatar: file(absolutePath: { regex: "/frog.png/" }) {
+      avatar: file(absolutePath: { regex: "/snail.png/" }) {
         childImageSharp {
           fixed(quality: 100, width: 50, height: 50) {
             ...GatsbyImageSharpFixed
@@ -25,16 +25,16 @@ export default function Header() {
       }
     }
   `)
-
+  const rootPath = `${process.env.rootPath}`
   const { title, summary, social } = data.site.siteMetadata
   return (
       <div className="flex">
         <Image
-          // className="rounded-full"
+          className="rounded-full"
           fixed={data.avatar.childImageSharp.fixed}
         />
         <div className="ml-4">
-          <Link to="/">
+          <Link to={rootPath}>
             <h1 className="text-2xl text-dclCyan">{title}</h1>
           </Link>
           <span className="text-lg">{summary}</span>

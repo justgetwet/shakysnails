@@ -1,7 +1,11 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: "shakysnails",
-    summary: 'just get wet ...',
+    title: "Shaky Snails",
+    summary: 'crawling slowly ...',
     description: 'put down my codes',
     social: {
       twitter: '',

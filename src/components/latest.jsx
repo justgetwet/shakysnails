@@ -22,6 +22,9 @@ export default function Latest() {
       }
     }
   `)
+  // const rootPath = `${__PATH_PREFIX__}/`
+  // const rootPath = `/shakysnails/`
+  const rootPath = `${process.env.rootPath}`
   const Posts = data.allMdx.edges
   return (
     <>
@@ -31,7 +34,7 @@ export default function Latest() {
         <div key={node.id} className="text-lg">
           <div className="inline">{node.frontmatter.date}</div>
           <h3 className="inline ml-2 text-dclYellow">
-            <Link to={`/` + node.slug}>{node.frontmatter.title}</Link>
+            <Link to={rootPath + node.slug}>{node.frontmatter.title}</Link>
           </h3>
           <div className="inline ml-2 whitespace-nowrap">
             <Tag tags={node.frontmatter.tags} />

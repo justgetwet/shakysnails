@@ -7,7 +7,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Lato', 'YakuHanJP', '"Hiragino Kaku Gothic ProN"', 'Meiryo'],
+        sans: ['Lato', 'YakuHanJP', 'Noto Sans JP',]
+        // ['"Hiragino Kaku Gothic ProN"', 'Meiryo'],
       },
       colors: {
         dclBackground: '#282a36',

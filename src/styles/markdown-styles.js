@@ -9,8 +9,8 @@ const tw = {
   H5: 'text-sm mt-4 mb-2', // 1.25rem(0.875rem) + 1rem = 2.25rem + .5rem
   H6: 'text-xs mt-4 mb-2', // 1rem(0.75rem) + 1rem = 2rem + .5rem
   A: 'underline text-dclOrange',
-  P: 'leading-relax mb-6', // relax -> line-height: 1.625
-  BQ: 'leading-relax px-2 mx-2 border-l-4 border-dclCyan quote',
+  P: 'leading-7 my-2', // relax -> line-height: 1.625
+  BQ: 'leading-7 px-2 mx-2 border-l-4 border-dclCyan quote',
   UL: 'list-disc list-inside my-4 ml-2',
   OL: 'list-decimal my-4 ml-6',
   LI: 'm-0.5',
