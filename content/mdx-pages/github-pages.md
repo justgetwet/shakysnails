@@ -1,50 +1,69 @@
 ---
-title: GitHub Pages
+title: Gatsby Works with GitHub Pages
 date: 2021-04-01
-tags: ['GitHub', 'Gatsby']
+tags: ['Gatsby', 'GitHub']
 ---
 
-Gatsbyで作成したブログサイトを、コードを管理するGitHubのレポジトリで公開する手順を残す。
+ GitHub Pages に Gatsby で生成した blog を公開する手順を残す。
 
-### 1. Gatsbyプロジェクト
+### 1. GitHub Pages
 
-本家のドキュメント [How Gatsby Works with GitHub Pages](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/)を読む。`gh-pages` をインストールする。
+[GitHub Pages]([GitHub Pages Documentation - GitHub Docs](https://docs.github.com/en/pages)) はGitHub の静的サイトホスティングサービス。ruby 製の Jekyll が使われている。
+
+- to a path like `username.github.io/reponame/` or `/docs`
+
+### 2. Gatsby から deploy する
+
+[How Gatsby Works with GitHub Pages](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/) を読む。
+
+`gh-pages` package をインストールする。
 
 ```shell
-# minimal starter
-npm init gatsby
-# install a package
+# install
 npm i -D gh-pages
 ```
 
-デプロイのコマンドを作成。`-b deploy` はGitHub上のdeployブランチのこと。`npm run deploy` でビルドから公開まで走る。
+Gatsby の設定ファイルに root path を記述する。
+
+```js
+// gatsby-config.js
+module.exports = {
+  pathPrefix: "/reponame",
+}
+```
+
+package.json に deploy script を記述する。
 
 ```json
 // package.json
 {
   "scripts": {
-    "deploy": "gatsby build && gh-pages -d public -b deploy"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b pub"
   }
 }
 ```
 
-### 2. GitHubでの作業
-
-対象プロジェクトのレポジトリを作成。`git remote add`、（紐づけ）まで完了させる。
+deploy 用のブランチを作成する。
 
 ```shell
-# deployブランチを作成
-git branch deploy
-git branch
-deploy
-* main
+# ブランチを作成
+git branch pub
 ```
 
-ブラウザ上のレポジトリのSettingsを選択、下へスクロールし、GitHub Pagesを選択する。Source項目のBranchプルダウンから`deploy`を選択し、`Save`をクリックする。 
+deploy する。
 
-### 3. 運用
+```shell
+npm run deploy
+```
 
-`npm run deploy` https://[ユーザ名].github.io/[レポジトリ名] で公開される。
 
-なお`deploy`ブランチへは、ローカルでビルドし、`public`フォルダに生成された静的ファイルをプッシュするので、公開コンテンツは、`main`ブランチへ`push`されたプロジェクトコードと直接的に連動していない。プロジェクトコードの`commit` `push` も同時に行いリモート上の整合性を保つようにする。
 
+(repository) Setting ➡️ GitHub Pages ➡️ Source ➡️ Branch
+
+ ➡️ (pulldown) pub ➡️ (button) Save
+
+pathPrefix をしない(dotenvだ)と画像がぼやける。
+
+fontsouceが機能しないので、CDNからWebフォントを読み込む。
+
+deploy後数分待つ場合がある
