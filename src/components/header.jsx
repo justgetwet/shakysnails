@@ -37,7 +37,7 @@ export default function Header() {
           <Link to={rootPath}>
             <h1 className="text-2xl text-dclCyan">{title}</h1>
           </Link>
-          <span className="text-lg">{summary}</span>
+          <span className="text-base">{summary}</span>
           <a className="ml-2" href={social.github}>
             <Github />
           </a>

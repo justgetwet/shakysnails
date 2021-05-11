@@ -1,5 +1,5 @@
 {
-  "name": "Shaky Snails",
+  "name": "ShakySnails",
   "version": "1.0.0",
   "private": true,
   "description": "shakysnails",
@@ -10,15 +10,16 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -b pub"
+    "deploy": "gatsby build  --prefix-paths && gh-pages -d public -b pub"
   },
   "dependencies": {
     "@fontsource/kosugi-maru": "^4.2.2",
     "@fontsource/lato": "^4.2.2",
     "@fontsource/noto-sans-jp": "^4.2.2",
+    "@fontsource/roboto": "^4.2.3",
     "@fontsource/yakuhanjp": "^4.2.4",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",

@@ -2,13 +2,12 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx}', './content/mdx-pages/*.mdx'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    fontFamily: {
-      kosugi: ['Lato', 'YakuHanJP', '"Kosugi Maru"', 'sans-serif'],
-    },
+    // fontFamily: {
+    //   kosugi: ['Roboto', 'YakuHanJP_Noto', '"Kosugi Maru"', 'sans-serif'],
+    // },
     extend: {
       fontFamily: {
-        sans: ['Lato', 'YakuHanJP', 'Noto Sans JP',]
-        // ['"Hiragino Kaku Gothic ProN"', 'Meiryo'],
+        sans: ['Roboto', 'YakuHanJP_Noto', '"Noto Sans JP"'],
       },
       colors: {
         dclBackground: '#282a36',

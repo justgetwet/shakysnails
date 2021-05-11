@@ -5,8 +5,9 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: "Shaky Snails",
-    summary: 'crawling slowly ...',
+    summary: 'crawl more slowly ...',
     description: 'put down my codes',
+    siteUrl: `https://justgetwet.github.io`,
     social: {
       twitter: '',
       github: 'https://github.com/justgetwet',
@@ -16,6 +17,7 @@ module.exports = {
     DEV_SSR: false,
     PARALLEL_SOURCING: true,
   },
+  pathPrefix: '/shakysnails',
   plugins: [
     "gatsby-plugin-postcss",
     {

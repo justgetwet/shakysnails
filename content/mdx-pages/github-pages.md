@@ -8,7 +8,7 @@ tags: ['Gatsby', 'GitHub']
 
 ### 1. GitHub Pages
 
-[GitHub Pages]([GitHub Pages Documentation - GitHub Docs](https://docs.github.com/en/pages)) はGitHub の静的サイトホスティングサービス。ruby 製の Jekyll が使われている。
+ [GitHub Pages](https://docs.github.com/en/pages) はGitHub の静的サイトホスティングサービス。ruby 製の Jekyll が使われている。
 
 - to a path like `username.github.io/reponame/` or `/docs`
 

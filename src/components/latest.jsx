@@ -33,9 +33,9 @@ export default function Latest() {
       {Posts.map(({ node }) => (
         <div key={node.id} className="text-lg">
           <div className="inline">{node.frontmatter.date}</div>
-          <h3 className="inline ml-2 text-dclYellow">
-            <Link to={rootPath + node.slug}>{node.frontmatter.title}</Link>
-          </h3>
+          <div className="inline ml-2 text-dclYellow">
+            <Link to={node.slug}>{node.frontmatter.title}</Link>
+          </div>
           <div className="inline ml-2 whitespace-nowrap">
             <Tag tags={node.frontmatter.tags} />
           </div>

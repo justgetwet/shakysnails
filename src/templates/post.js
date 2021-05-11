@@ -22,9 +22,9 @@ export default ({ data, pageContext }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <div className="text-lg mt-2">Posted on {post.frontmatter.date}</div>
+      <div className="text-base mt-2">Posted on {post.frontmatter.date}</div>
       <hr />
-      <h2 className="text-2xl mt-2">{post.frontmatter.title}</h2>
+      <h2 className="text-2xl mt-2 text-dclYellow">{post.frontmatter.title}</h2>
       <div className="text-lg mt-2 mb-4">
         <Tags tags={post.frontmatter.tags} />
       </div>
@@ -33,7 +33,7 @@ export default ({ data, pageContext }) => {
       </MDXProvider>
       <div className="flex mt-8 mb-4">
         {previous && (
-          <Link to={rootPath + previous.slug}>
+          <Link to={previous.slug}>
             <ArrowLeft />
           </Link>
         )}

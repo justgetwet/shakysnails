@@ -23,7 +23,7 @@ require('dotenv').config({
 })
 ```
 
-API Keyなど記述する場合、セキュリティ上
+セキュリティ上、見せたくない場合
 
 ```js
 // .gitignore

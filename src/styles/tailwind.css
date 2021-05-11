@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 p > code {
-  background-color: #1d1f21; /* atom dark background */
+  background-color: #44475a; /* atom dark background */
   font-family: Inconsolata, Monaco, Consolas, monospace;
-  font-size: 1rem;
+  font-size: .875rem;
   padding: 0.1rem;
   color: #f1fa8c; /* dracula yellow */
 }
@@ -49,6 +49,10 @@ form dl dd{
   padding: 10px 0;
 }
 
+/* body {
+  font-family: 'Lato', 'YakuHanJP', '"Noto Sans JP"';
+} */
+
 @layer base {
   html {
     @apply antialiased text-dclForeground bg-dclBackground;
@@ -62,6 +66,6 @@ form dl dd{
   h4,
   h5,
   h6 {
-    @apply font-kosugi;
+    @apply font-bold;
   }
 }
