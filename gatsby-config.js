@@ -71,6 +71,14 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "assets",
+        path: "./content/images/",
+      },
+      __key: "assets",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "pages",
         path: "./content/mdx-pages/",
       },
