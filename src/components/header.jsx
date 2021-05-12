@@ -34,7 +34,8 @@ export default function Header() {
           fixed={data.avatar.childImageSharp.fixed}
         />
         <div className="ml-4">
-          <Link to={rootPath}>
+          {/* <Link to={rootPath}> */}
+          <Link to="/">
             <h1 className="text-2xl text-dclCyan">{title}</h1>
           </Link>
           <span className="text-base">{summary}</span>
