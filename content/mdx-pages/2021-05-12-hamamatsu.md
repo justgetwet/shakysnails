@@ -72,3 +72,38 @@ tags: ["Auto Race"]
 
 ![Racer](../../content/images/A-121_鈴木清市.jpg) 
 
+#### 11R 
+
+青山 周平 20m S-1 37歳/31期 ハルク・７３ 伊勢崎 
+
+![Racer](../../content/images/S-1_青山周平.jpg) 
+
+野田 光宏 0m A-178 50歳/24期 シデンカイ 浜松 
+
+![Racer](../../content/images/A-178_野田光宏.jpg) 
+
+白次 義孝 0m A-139 49歳/23期 ヨシカラス 伊勢崎 
+
+![Racer](../../content/images/A-139_白次義孝.jpg) 
+
+鈴木 一馬 10m A-92 47歳/30期 デイトナ１８３ 浜松 
+
+![Racer](../../content/images/A-92_鈴木一馬.jpg) 
+
+岡松 忠 10m A-47 60歳/17期 ザ・ＧＴＯ 山陽 
+
+![Racer](../../content/images/A-47_岡松忠.jpg) 
+
+落合 巧 20m A-75 24歳/33期 ニャースケ 浜松 
+
+![Racer](../../content/images/A-75_落合巧.jpg) 
+
+東小野 正道 20m A-24 47歳/25期 クレイジーＤ 飯塚 
+
+![Racer](../../content/images/A-24_東小野正道.jpg) 
+
+山田 達也 20m S-27 38歳/28期 イプシロン 川口 
+
+![Racer](../../content/images/S-27_山田達也.jpg) 
+
+
