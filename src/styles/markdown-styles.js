@@ -8,15 +8,15 @@ const tw = {
   H4: 'text-base mt-4 mb-3', // 1.5rem(1rem) + 1.25rem = 2.75rem + .5rem
   H5: 'text-sm mt-4 mb-2', // 1.25rem(0.875rem) + 1rem = 2.25rem + .5rem
   H6: 'text-xs mt-4 mb-2', // 1rem(0.75rem) + 1rem = 2rem + .5rem
-  A: 'underline text-dclOrange',
+  A: 'no-underline text-dclOrange',
   P: 'leading-7 my-2', // relax -> line-height: 1.625
   BQ: 'leading-7 px-2 mx-2 border-l-4 border-dclCyan quote',
   UL: 'list-disc list-inside my-4 ml-2',
   OL: 'list-decimal my-4 ml-6',
   LI: 'm-0.5',
-  TABLE: 'table-auto border-collapse border w-full mb-4',
-  TH: 'border border-gray-500 p-1 font-bold bg-gray-700',
-  TD: 'border border-gray-500 p-1 pr-2 text-right',
+  TABLE: 'table-auto border-none border w-full mb-4',
+  TH: 'border-none border-gray-500 p-1 font-bold bg-gray-700',
+  TD: 'border-none border-gray-500 p-1 text-left',
   IFRAME: 'w-full',
 }
 
